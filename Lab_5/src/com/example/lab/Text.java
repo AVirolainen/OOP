@@ -15,9 +15,7 @@ class Text {
         int k = 0;
         int i;
         int j = 0;
-        // виконуємо заміну послідовності табуляцій одним пробілом
         text = tab(text);
-        // знаходимо кількість речень у тексті
         for (j = 0; j < text.length(); j++) {
             sumbol = text.charAt(j);
             if (sumbol == '.') {
@@ -36,15 +34,11 @@ class Text {
                 k++;
             }
         }
-        /*
-         * створюємо масив об'єктів класу Sentence розміром k
-         */
+
         Sentence[] sentenses = new Sentence[k];
         i = 0;
         int l = -1;
-        /*
-         * записуємо кожне речення у елемент масиву sentenses
-         */
+
         for (j = 0; j < text.length(); j++) {
             sumbol = text.charAt(j);
 
@@ -73,7 +67,6 @@ class Text {
         data = sentenses;
     }
 
-    // метод замінює послідовність табуляцій одним пробілом
     private String tab(String str) {
         StringBuffer x = new StringBuffer(str);
         for (int i = 0; i < x.length(); i++) {
@@ -91,17 +84,14 @@ class Text {
         return str;
     }
 
-    // метод повертає речення по його номеру i
     public String getSentences(int i) {
         return data[i].GetSen();
     }
 
-    // метод повертає кількість речень
     public int sentenceNumber() {
         return data.length;
     }
 
-    // метод повертає весь текст
     public String getText() {
         return allText;
     }
