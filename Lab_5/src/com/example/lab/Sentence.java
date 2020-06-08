@@ -29,19 +29,12 @@ public class Sentence {
 
         }
         System.out.println(Arrays.toString(sentence_string.split(" "))+"   2");
-        /*
-         * створюємо масив об'єктів класу Word
-         */
+
         Word[] word = new Word[word_counter];
-        /*
-         * створюємо масив об'єктів класу Punktuatoin
-         */
+
         Punctuation[] punktuatoin = new Punctuation[punkruation_counter];
         word_counter = 0;
         punkruation_counter = 0;
-        /*
-         * ствоюємо об'єкти Word Punktuatoin одноіменних масивів
-         */
 
         System.out.println(Arrays.toString(sentence_string.split(" "))+"   4");
         sentence_string = new String(sentence_string.replace(".", ""));
@@ -56,27 +49,22 @@ public class Sentence {
         data1 = punktuatoin;
     }
 
-    // метод передає масив слів у заданому речення
     public Word[] getWord() {
         return data;
     }
 
-    // метод передає масив знаків пунктуації у заданому реченні
     public Punctuation[] getPunktuatoins() {
         return data1;
     }
 
-    // метод передає кількість слів у заданому реченні
     public int wordNumber() {
         return data.length;
     }
 
-    // метод передає кількість символів пунктуації а заданому реченні
     public int punktuationNumber() {
         return data1.length;
     }
 
-    // метод повертає задане речення
     public String GetSen() {
         return sentence;
     }
