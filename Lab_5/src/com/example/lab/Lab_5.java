@@ -24,19 +24,9 @@ public class Lab_5 {
 
             System.out.println(txt.getText());
             System.out.println();
-            // Створюємо об'єкт класу Sentence
             Sentence s;
-                /*
-                 * переглядаємо всі речення
-                 */
                 for (int i = 0; i < txt.sentenceNumber(); i++) {
-                    /*
-                     * передаємо об'єкту s i-те речення
-                     */
                     s = new Sentence(txt.getSentences(i));
-                    /*
-                     * переглядаємо всі слова даного речення
-                     */
                     for (int j = 0; j < s.getWord().length; j++) {
                         if ((i == s.getWord()[j].find())) {
                             System.out.print(s.getWord()[j].getWord());
