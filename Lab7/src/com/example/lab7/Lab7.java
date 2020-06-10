@@ -7,10 +7,10 @@ import java.util.ArrayList;
 public class Lab7 {
     public static void main(String[] args) {
 
-        Shield shield = new Shield();
-        Helmet helmet = new Helmet();
-        Boots boots = new Boots();
-        Leggins leggins = new Leggins();
+        Shield shield = new Shield("Golden Shield", 12, 70, 200);
+        Helmet helmet = new Helmet("Golden Helmet", 5, 50, 100);
+        Boots boots = new Boots("Golden Boots", 5, 60, 150);
+        Leggins leggins = new Leggins("Golden Leggins", 8, 65, 175);
 
         MyCollection am = new MyCollection();
 
