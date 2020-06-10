@@ -41,7 +41,7 @@ public class Sentence {
 
         sentence = sentence_string;
         data = word;
-        data1 = punktuatoin;
+        data1 = punctuation;
     }
 
     public Word[] getWord() {
