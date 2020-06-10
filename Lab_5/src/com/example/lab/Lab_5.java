@@ -6,7 +6,6 @@ public class Lab_5 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the text:");
         String text = scan.nextLine()+".";
-        System.out.println(text);
         System.out.println("Enter the number:");
         int number = scan.nextInt();
         Word num = new Word("");
@@ -16,10 +15,6 @@ public class Lab_5 {
         if ((text.substring(0).trim().equals(""))) {
             System.out.println("no text");
         } else {
-            /*
-             * створюємо об'єкт класу Text, та передаємо йому текст, який
-             * складаєть з масиву об'ектів класу Sentence
-             */
             Text txt = new Text(text);
 
             System.out.println(txt.getText());
