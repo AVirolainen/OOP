@@ -17,8 +17,6 @@ public class Lab_5 {
         } else {
             Text txt = new Text(text);
 
-            System.out.println(txt.getText());
-            System.out.println();
             Sentence s;
                 for (int i = 0; i < txt.sentenceNumber(); i++) {
                     s = new Sentence(txt.getSentences(i));
