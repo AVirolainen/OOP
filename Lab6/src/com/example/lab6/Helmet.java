@@ -2,7 +2,7 @@ package com.example.lab6;
 
 public class Helmet extends Armor {
 
-    public Helmet(){
-       super("Golden Helmet", 5, 50, 100);
+    public Helmet(String name1, int v, int w, int p){
+       super(name1, v, w, p);
 }
 }
