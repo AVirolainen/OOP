@@ -14,10 +14,7 @@ public class Sentence {
         word_counter = 1;
         char symbol;
         int punkruation_counter = 1;
-        /*
-         * знаходимо кількість символів пунктуації і кількість слів в даному
-         * реченні
-         */
+
         for (int i = 0; i < sentence_string.length(); i++) {
             symbol = sentence_string.charAt(i);
             if (sentence_string.charAt(i) == ' ') {
@@ -28,7 +25,6 @@ public class Sentence {
                 punkruation_counter++;
 
         }
-        System.out.println(Arrays.toString(sentence_string.split(" "))+"   2");
 
         Word[] word = new Word[word_counter];
 
@@ -36,7 +32,6 @@ public class Sentence {
         word_counter = 0;
         punkruation_counter = 0;
 
-        System.out.println(Arrays.toString(sentence_string.split(" "))+"   4");
         sentence_string = new String(sentence_string.replace(".", ""));
         String[] l = sentence_string.split(" ");
 
