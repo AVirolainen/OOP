@@ -13,7 +13,7 @@ public class Sentence {
         int word_counter;
         word_counter = 1;
         char symbol;
-        int punkruation_counter = 1;
+        int punctuation_counter = 1;
 
         for (int i = 0; i < sentence_string.length(); i++) {
             symbol = sentence_string.charAt(i);
@@ -22,15 +22,15 @@ public class Sentence {
             }
             if ((symbol == '.') | (symbol == ',') | (symbol == '!')
                     | (symbol == '?') | (symbol == '/') | (symbol == ':'))
-                punkruation_counter++;
+                punktuation_counter++;
 
         }
 
         Word[] word = new Word[word_counter];
 
-        Punctuation[] punktuatoin = new Punctuation[punkruation_counter];
+        Punctuation[] punctuation = new Punctuation[punkruation_counter];
         word_counter = 0;
-        punkruation_counter = 0;
+        punktuation_counter = 0;
 
         sentence_string = new String(sentence_string.replace(".", ""));
         String[] l = sentence_string.split(" ");
@@ -48,7 +48,7 @@ public class Sentence {
         return data;
     }
 
-    public Punctuation[] getPunktuatoins() {
+    public Punctuation[] getPunctuations() {
         return data1;
     }
 
@@ -56,7 +56,7 @@ public class Sentence {
         return data.length;
     }
 
-    public int punktuationNumber() {
+    public int punctuationNumber() {
         return data1.length;
     }
 
