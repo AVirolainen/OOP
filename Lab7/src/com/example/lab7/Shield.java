@@ -1,8 +1,9 @@
 package com.example.lab7;
 
 public class Shield extends Armor {
+    public Shield(String name1, int v , int w, int p){
 
-    public Shield(){
-        super("Dragon Shield", 10, 100, 120);
+        super(name1, v, w, p);
     }
 }
+
